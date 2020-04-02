@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 var upload = multer({
     storage: multerS3({
         s3: s3,
-        bucket: 'porttantanmoyphoto',
+        bucket: 'xxxxxxxxxxxxxxxxx',
         contentType: multerS3.AUTO_CONTENT_TYPE,
         key: function (req, file, cb) {
             cb(null, file.originalname);
